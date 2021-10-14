@@ -55,7 +55,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -97,11 +97,16 @@ img {
 .header {
   border-bottom: 1px solid #ececec;
 }
+.header .container {
+  display: flex;
+  align-items: center;
+}
 
 /* ========Logo========*/
 .logo {
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-right: 93px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -109,6 +114,9 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logoColor);
+}
+.logo-footer {
+  padding: 0;
 }
 .logo-darck {
   color: var(--logoColorDarck);
@@ -126,13 +134,8 @@ img {
 }
 
 /* ========Navigation======== */
-.row {
-  display: flex;
-  align-items: center;
-}
 .nav-list {
   display: flex;
-  margin-left: 93px;
 }
 .nav-item:not(:first-child) {
   margin-left: 50px;
@@ -155,7 +158,6 @@ img {
 /* ========Tel , Mail======== */
 .contact {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-left: auto;
 }
@@ -216,10 +218,12 @@ img {
 /* ========Features section======== */
 .features-list {
   display: flex;
+  margin-top: -30px;
   margin-left: -30px;
 }
 .features-item {
   flex-basis: calc((100% - 3 * 30px) / 4);
+  margin-top: 30px;
   margin-left: 30px;
 }
 .features-caption {
@@ -255,9 +259,11 @@ img {
 }
 .team-list {
   display: flex;
+  margin-top: -30px;
   margin-left: -30px;
 }
 .team-item {
+  margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 3 * 30px) / 4);
   background-color: var(--lightBgColor);
